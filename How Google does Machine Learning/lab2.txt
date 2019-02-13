@@ -1,0 +1,4 @@
+gcloud compute zones list
+datalab create mydatalabvm --zone us-east1-b
+
+datalab connect mydatalabvm # if interuppted

@@ -1,0 +1,8 @@
+git clone https://github.com/GoogleCloudPlatform/training-data-analyst
+cd training-data-analyst/courses/machine_learning/deepdive/01_googleml/earthquakes
+bash ingest.sh
+https://github.com/GoogleCloudPlatform/datalab-samples/blob/master/basemap/earthquakes.ipynb
+bash install_missing.sh
+./transform.py
+gsutil cp earthquakes.* gs://<YOUR-BUCKET>/earthquakes/
+gsutil acl ch -u AllUsers:R gs://qwiklabs-gcp-1874236553bf2380/earthquakes/*
