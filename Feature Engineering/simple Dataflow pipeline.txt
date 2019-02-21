@@ -1,0 +1,11 @@
+git clone https://github.com/GoogleCloudPlatform/training-data-analyst
+cd training-data-analyst/courses/data_analysis/lab2/python
+sudo ./install_packages.sh
+pip -V
+python grep.py
+cat /tmp/output-*
+
+gsutil cp ../javahelp/src/main/java/com/google/cloud/training/dataanalyst/javahelp/*.java gs://qwiklabs-gcp-8e92aabedd00bc3a/javahelp
+
+python grepc.py
+gsutil cat gs://qwiklabs-gcp-8e92aabedd00bc3a/javahelp/output-*
